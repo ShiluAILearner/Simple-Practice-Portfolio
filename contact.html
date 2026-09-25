@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* contact me page */
+        body{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #ContactMe {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 400px;
+            width: 35%;
+            margin-top: 10%;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            background: linear-gradient(to left, rgb(160, 224, 224), rgb(6, 91, 97));
+        }
+
+        input,textarea {
+            margin: 20px;
+            height: 30px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <form id="ContactMe">
+        <h1>Enter Contact Info...</h1>
+        <div class="name">
+            <label for="name">Name : </label> <br>
+            <input placeholder="e.g. Shila Mondal" id="name" type="text" name="name" required> <br>
+        </div>
+        <div class="mail">
+            <label for="email">Mail ID : </label> <br>
+            <input placeholder="XYZ@gmail.com" type="email" name="mail" required> <br>
+        </div>
+        <div class="msgs">
+            <textarea placeholder="Have queries" id="message"></textarea> <br>
+            <button id="send" type="submit">Send</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
